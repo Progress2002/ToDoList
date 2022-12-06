@@ -122,7 +122,7 @@ export const editTask = (element) => {
   });
 };
 
-  // Add new task to the list---------
+// Add new task to the list---------
 const add = (task) => {
   render(task);
   tasks.push(task);
