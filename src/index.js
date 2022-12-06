@@ -3,7 +3,6 @@ import {
   render, remove, markAsCompleted, editTask, cleareCompleted, tasks, formaction,
 } from './script.js';
 
-
 const toDoListContainer = document.querySelector('.todo-list');
 
 formaction();
@@ -18,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const textParentNodeId = parseInt(text.parentNode.parentNode.parentNode.id, 10);
         if (textParentNodeId === taskIndex) {
           text.classList.add('completed');
+          text.previousElementSibling.checked = true;
         }
       });
     }

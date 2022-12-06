@@ -1,4 +1,4 @@
-import toggleComplete from "./complete.js";
+import toggleComplete from './complete.js'; // eslint-disable-line 
 
 const completeBtn = document.querySelector('.complete');
 const toDoListContainer = document.querySelector('.todo-list');
@@ -86,12 +86,11 @@ export const cleareCompleted = (element) => {
       tasks[i].index = i;
       updateStorage(tasks);
     }
-    editTask(toDoListContainer);
     updateStorage(tasks);
   });
 };
 
-// // edit task----------------
+// edit task----------------
 export const editTask = (element) => {
   element.querySelectorAll('.text').forEach((box) => {
     box.addEventListener('input', (e) => {
@@ -108,7 +107,7 @@ export const editTask = (element) => {
   });
 };
 
-//   // Add new task to the list---------
+// Add new task to the list---------
 const add = (task) => {
   render(task);
   tasks.push(task);
