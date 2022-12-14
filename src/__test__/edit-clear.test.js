@@ -63,7 +63,7 @@ describe('Edit method', () => {
 });
 
 // describe('Clear completed tasks method', () => {
-//   test('Clear completed tasks method should remove completed task from dom and local storage', () => {
+//   test('Clear completed method should remove task from dom and local storage', () => {
 //     document.body.innerHTML = `
 //       <div class="todo-list"></div>
 //       <button class="complete">Clear all completed</button>
