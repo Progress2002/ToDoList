@@ -13,6 +13,7 @@ body {
 
 #main {
   width: 94%;
+  border-radius: 7px;
   margin: auto;
   background-color: aliceblue;
   box-shadow: 0 5px 9px gray;
@@ -23,14 +24,21 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+  background-color: rgb(46, 46, 236);
+  color: #fff;
+  border-radius: 7px 7px 0 0;
 }
 
 h2 {
-  font-weight: normal;
+  font-weight: bolder;
 }
 
 .add {
   width: 100%;
+}
+
+form {
+  display: flex;
 }
 
 input[type=text] {
@@ -42,6 +50,14 @@ input[type=text] {
   font-size: 18px;
   font-style: italic;
   background-color: inherit;
+}
+
+button[type=submit] {
+  border: none;
+  background-color: inherit;
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 .todo-list .list {
@@ -82,18 +98,8 @@ input[type=checkbox]:hover {
   cursor: pointer;
 }
 
-.icon {
-  font-size: 20px;
-  color: rgb(175, 175, 175);
-  cursor: pointer;
-}
-
-.active {
-  display: none;
-}
-
 .delete {
-  color: rgb(223, 32, 32);
+  color: rgb(221, 50, 50);
   cursor: pointer;
 }
 
@@ -101,6 +107,7 @@ input[type=checkbox]:hover {
   padding: 13px;
   text-align: center;
   font-size: 20px;
+  background-color: rgb(223, 219, 219);
 }
 
 #completed:hover {
