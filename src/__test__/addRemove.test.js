@@ -47,8 +47,8 @@ describe('Add method', () => {
   });
 });
 
-describe('Add method', () => {
-  test('Remove method should add task to dom and local storage', () => {
+describe('Remove method', () => {
+  test('Remove method should remove tasks from dom and local storage', () => {
     document.body.innerHTML = `
       <div class="todo-list"></div>
     `;
