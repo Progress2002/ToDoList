@@ -62,34 +62,34 @@ describe('Edit method', () => {
   });
 });
 
-// describe('Clear completed tasks method', () => {
-//   test('Clear completed method should remove task from dom and local storage', () => {
-//     document.body.innerHTML = `
-//       <div class="todo-list"></div>
-//       <button class="complete">Clear all completed</button>
-//     `;
+describe('Clear completed tasks method', () => {
+  test('Clear completed method should remove task from dom and local storage', () => {
+    document.body.innerHTML = `
+      <div class="todo-list"></div>
+      <button class="complete">Clear all completed</button>
+    `;
 
-//     const tasks = [];
-//     const mockData = [
-//       {
-//         index: 0,
-//         description: 'do my math homework',
-//         completed: false,
-//       },
-//     ];
+    const tasks = [];
+    const mockData = [
+      {
+        index: 0,
+        description: 'do my math homework',
+        completed: false,
+      },
+    ];
 
-//     const taskListEl = document.querySelector('.todo-list');
+    const taskListEl = document.querySelector('.todo-list');
 
-//     add(mockData[0], tasks, taskListEl);
+    add(mockData[0], tasks, taskListEl);
 
-//     const checkbox = document.querySelector('input');
-//     checkbox.click();
-//     cleareCompleted(taskListEl, tasks);
+    const checkbox = document.querySelector('input');
+    checkbox.click();
+    cleareCompleted(taskListEl, tasks);
 
-//     const taskFromListEl = getTask(mockData[0].index);
-//     const taskFromLocalStorage = JSON.parse(localStorage.getItem('My-To-Do-List'))[0];
+    const taskFromListEl = getTask(mockData[0].index);
+    const taskFromLocalStorage = JSON.parse(localStorage.getItem('My-To-Do-List'))[0];
 
-//     expect(taskFromListEl).toBeUndefined();
-//     expect(taskFromLocalStorage).toBeUndefined();
-//   });
-// });
+    expect(taskFromListEl).toBeUndefined();
+    expect(taskFromLocalStorage).toBeUndefined();
+  });
+});
