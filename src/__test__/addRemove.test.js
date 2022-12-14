@@ -47,23 +47,23 @@ describe('Add method', () => {
   });
 });
 
-// describe('Add method', () => {
-//   test('Remove method should add task to dom and local storage', () => {
-//     document.body.innerHTML = `
-//       <div class="todo-list"></div>
-//     `;
+describe('Add method', () => {
+  test('Remove method should add task to dom and local storage', () => {
+    document.body.innerHTML = `
+      <div class="todo-list"></div>
+    `;
 
-//     const taskListEl = document.querySelector('.todo-list');
+    const taskListEl = document.querySelector('.todo-list');
 
-//     add(mockData[0], tasks, taskListEl);
+    add(mockData[0], tasks, taskListEl);
 
-//     const removeBtn = document.querySelector('.delete');
-//     removeBtn.click();
+    const removeBtn = document.querySelector('.delete');
+    removeBtn.click();
 
-//     const taskFromListEl = getTask(mockData[0].index);
-//     const taskFromLocalStorage = JSON.parse(localStorage.getItem('My-To-Do-List'))[0];
+    const taskFromListEl = getTask(mockData[0].index);
+    const taskFromLocalStorage = JSON.parse(localStorage.getItem('My-To-Do-List'))[0];
 
-//     expect(taskFromListEl).not.toEqual(mockData[0]);
-//     expect(taskFromLocalStorage).not.toEqual(mockData[0]);
-//   });
-// });
+    expect(taskFromListEl).not.toEqual(mockData[0]);
+    expect(taskFromLocalStorage).not.toEqual(mockData[0]);
+  });
+});
